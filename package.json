@@ -1,0 +1,58 @@
+{
+  "name": "1w-abcmartv3.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "dependencies": {
+    "@types/express-session": "^1.17.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "forever": "^2.0.0",
+    "jest": "^25.5.4",
+    "pg": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/jest": "^25.2.2",
+    "@types/pg": "^7.14.3",
+    "@types/supertest": "^2.0.9",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2",
+    "ts-jest": "^25.5.1",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.2"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc -p .",
+    "start": "ts-node src/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/2005-javareact/trainingrepos/1w-abcmartv3.0.git"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/2005-javareact/trainingrepos/1w-abcmartv3.0/issues"
+  },
+  "homepage": "https://gitlab.com/2005-javareact/trainingrepos/1w-abcmartv3.0#readme"
+}
