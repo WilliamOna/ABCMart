@@ -23,6 +23,9 @@ app.use(sessionMiddleware)
 app.use('/paper',paperRouter);
 app.use('/auth',loginRouter)
 
+app.get('/',(req,res)=>{
+    res.send("Welcom to ABC Mart's API")
+})
 // start the server
 app.listen(PORT,()=>{
     console.log(`Running on port: ${PORT}`);
