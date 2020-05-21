@@ -7,9 +7,9 @@ pipeline {
             sh 'npm install'
          }
       }
-      stage('Bye') {
+      stage('Start App!') {
          steps {
-            echo 'Goodbye!'
+            sh 'npm start'
          }
       }
    }
