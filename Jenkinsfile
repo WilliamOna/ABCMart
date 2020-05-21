@@ -9,7 +9,7 @@ pipeline {
       }
       stage('Start App!') {
          steps {
-            sh 'npm start'
+            sh 'nohup npm start &'
          }
       }
    }
