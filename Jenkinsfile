@@ -20,10 +20,12 @@ pipeline {
       }
       stage('Destroy old App') {
          steps {
-             try{
-                 sh 'kill -9 $(lsof -t -i:5000)'
-             }catch (all){
-                 echo 'No Server was already running'
+             script{
+                try{
+                    sh 'kill -9 $(lsof -t -i:5000)'
+                }catch (all){
+                    echo 'No Server was already running'
+                }
              }
          }
       }
