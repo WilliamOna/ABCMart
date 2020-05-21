@@ -1,7 +1,9 @@
 pipeline {
    agent any
 
-
+    enivronment{
+        JENKINS_NODE_COOKIE='dontkillmeplease'
+    }
    stages {
     //    stage('clean'){
     //        steps{
