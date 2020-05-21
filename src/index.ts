@@ -24,7 +24,7 @@ app.use('/paper',paperRouter);
 app.use('/auth',loginRouter)
 
 app.get('/',(req,res)=>{
-    res.send("Welcome to ABC Mart's API!s")
+    res.send("Welcome to ABC Mart's APIs! Hello To everyone!")
 })
 // start the server
 app.listen(PORT,()=>{
