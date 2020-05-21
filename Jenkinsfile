@@ -2,9 +2,9 @@ pipeline {
    agent any
 
    stages {
-      stage('Hello') {
+      stage('Install node modules') {
          steps {
-            echo 'Hello World from Jenkinsfile'
+            sh 'npm install'
          }
       }
       stage('Bye') {
