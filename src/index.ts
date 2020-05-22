@@ -24,7 +24,7 @@ app.use('/paper',paperRouter);
 app.use('/auth',loginRouter)
 
 app.get('/',(req,res)=>{
-    res.send("Old version of app.")
+    res.send("New Version!!!")
 })
 // start the server
 app.listen(PORT,()=>{
