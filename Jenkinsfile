@@ -8,7 +8,7 @@ pipeline {
    stages {
        stage('clean'){
            steps{
-               cleanWS();
+               cleanWS()
            }
        }
        stage('download'){
